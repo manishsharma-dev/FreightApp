@@ -1,0 +1,52 @@
+<div class="bg-light auth-background min-vh-100 d-flex flex-row align-items-center">
+  <c-container class="container-fluid--auth">
+    <c-row class="justify-content-center">
+      <div _ngcontent-nvx-c51="" class="col-md-6 auth-col auth-col--bg"><img _ngcontent-nvx-c51=""
+          src="assets/img/logo.png" alt="logo" class="img-fluid"></div>
+      <c-col md="6" class="auth-col auth-col--right">
+        <c-card-group class="w-80">
+          <c-card class="p-4">
+            <c-card-body>
+              <form cForm>
+                <h1>Vendor Login</h1>
+                <p class="text-medium-emphasis">Sign In to your account</p>
+                <c-input-group class="mb-3">
+                  <span cInputGroupText>
+                    <svg cIcon name="cilUser"></svg>
+                  </span>
+                  <input autoComplete="username" cFormControl placeholder="Username" />
+                </c-input-group>
+                <c-input-group class="mb-4">
+                  <span cInputGroupText>
+                    <svg cIcon name="cilLockLocked"></svg>
+                  </span>
+                  <input
+                    autoComplete="current-password"
+                    cFormControl
+                    placeholder="Password"
+                    type="password"
+                  />
+                </c-input-group>
+                <c-row>
+                  <c-col xs="6">
+                    <button cButton class="px-4" color="primary">
+                      Login
+                    </button>
+                  </c-col>
+                  <c-col class="text-right" xs="6">
+                    <button cButton class="px-0" color="link" [routerLink]="['/vendor/forgot-password']">
+                      Forgot password?
+                    </button>
+                  </c-col>
+                </c-row>
+              </form>
+            </c-card-body>
+          </c-card>  
+        </c-card-group>
+      </c-col>
+    </c-row>
+  </c-container>
+</div>
+
+  
+  

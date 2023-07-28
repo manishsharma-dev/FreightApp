@@ -1,0 +1,117 @@
+/* You can add global styles to this file, and also import other style files */
+// If you want to override variables do it here
+@import "variables";
+
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import styles with default layout.
+@import "~@coreui/coreui/scss/coreui";
+
+// Import Chart.js custom tooltips styles
+@import "~@coreui/chartjs/scss/coreui-chartjs";
+
+// perfect scrollbar theming for use with [perfectScrollbar] directive
+//@import '~perfect-scrollbar/css/perfect-scrollbar.css';
+
+@import "layout";
+
+// Some temp fixes
+@import "fixes";
+
+// Prism.js
+@import "examples";
+
+// If you want to add something do it here
+@import "custom";
+
+@import "~bootstrap/scss/bootstrap";
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+.float-right {
+  float: right;
+}
+
+.auth-background {
+  height: 100vh;
+  background: url(../assets/img/bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.auth-col--bg {
+  padding: 15px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+}
+
+.auth-col--right {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-col {
+  min-height: 100vh;
+}
+
+.container-fluid--auth {
+  position: relative;
+  z-index: 1;
+}
+
+.auth-col__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 40px;
+  border-radius: 26px;
+  background: #ffffff;
+  width: 70%;
+  box-shadow: 0 4px 8px #0000001f;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+@media (max-width: 767px) {
+  .auth-col {
+    min-height: auto;
+  }
+}
+
+.back-btn{
+  color : rgb(44, 43, 43);
+  float: right;
+  cursor: pointer;
+}
+
+img.main-logo{
+  height: 8vh!important;
+}
+.main-header{
+  //background: #0074CB!important;
+}

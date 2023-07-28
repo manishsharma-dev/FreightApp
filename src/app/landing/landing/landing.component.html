@@ -1,0 +1,32 @@
+<div class="bg-light auth-background min-vh-100 d-flex flex-row align-items-center">
+    <c-container class="container-fluid--auth">
+      <c-row class="justify-content-center">
+        <div _ngcontent-nvx-c51="" class="col-md-6 auth-col auth-col--bg">
+          <img _ngcontent-nvx-c51="" src="assets/img/logo.png" alt="logo" class="img-fluid">
+        </div>
+        <c-col md="6" class="auth-col auth-col--right">
+          <c-card-group class="w-80">
+            <c-card class="p-4">
+                <c-card-body>
+                    <form cForm>
+
+                        <c-row>
+                            <c-col xs="6" class="text-center">
+                                <button cButton class="px-4" color="primary" [routerLink]="['/admin']">
+                                    Admin Panel
+                                </button>
+                            </c-col>
+                            <c-col xs="6" class="text-center">
+                                <button cButton class="px-4" color="primary" [routerLink]="['/vendor']">
+                                    Vendor Login
+                                </button>
+                            </c-col>
+                        </c-row>
+                    </form>
+                </c-card-body>
+            </c-card>
+          </c-card-group>
+        </c-col>
+      </c-row>
+    </c-container>
+  </div>
